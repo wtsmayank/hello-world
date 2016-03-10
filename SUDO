@@ -1,0 +1,8 @@
+sudo mount wts:/opt/lampp/htdocs /mnt/htdocs/
+sudo chmod -R 777 /mnt/htdocs/lvtest
+cd /mnt/htdocs
+
+Files And Directory Permissions
+sudo chmod -R 755 /mnt/htdocs/lvtest
+find /mnt/htdocs -type d -exec chmod 755 {} \;
+find /mnt/htdocs -type f -exec chmod 644 {} \;
